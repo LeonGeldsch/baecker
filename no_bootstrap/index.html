@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Bäckerei</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/master.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <a href="index.html" class="logo"><img src="./img/logo/logo.jpg" alt="logo"></a>
+        <a href="index.html" style="color:white">Home</a>
+        <a href="waren.html">Waren</a>
+        <a href="registrierung.html">Registrieren</a>
+        <span>☰</span>
+        <div class="mobile-menu">
+          <span>×</span>
+          <a href="index.html">Home</a>
+          <a href="waren.html">Waren</a>
+          <a href="registrierung.html">Registrieren</a>
+        </div>
+      </header>
+      <div class="slideshow-container">
+        <div class="welcome-message">
+          <h1>Wilkommen bei der Bäckerei Kock!</h1>
+          <p>Hier finden sie alles was das Herz begehrt! Von Informationen über die Bäckerei bis hin zur bequemen Online Brötchenbestellung. </p>
+          <a href="waren.html"><button type="button" name="button">Jetzt Bestellen!</button></a>
+        </div>
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+        <div class="image-container">
+          <div class="bullet-point-container"></div>
+          <img class="fade active" src="./img/slideshow/pic1.png" alt="pic1">
+          <img class="fade" src="./img/slideshow/pic2.png" alt="pic2">
+          <img class="fade" src="./img/slideshow/pic3.png" alt="pic3">
+          <img class="fade" src="./img/slideshow/pic4.png" alt="pic4">
+        </div>
+      </div>
+      <div class="infobox" id="infobox1">
+        <h2>Warum Online bestellen?</h2>
+        <p>Wenn sie Online bestellen garantieren wir ihnen, dass ihre bestellten Waren immer auf Lager sind und sofort Morgens in ihrer Filialie abholbereit sind.</p>
+      </div>
+      <div class="infobox" id="infobox2">
+        <h2>Warum bei uns bestellen?</h2>
+        <p>Nur bei uns kriegen sie die beste Qualität zum geringen Preis. Unsere Brote und Brötchen werden im Gegesatz zu vielen anderen Herstellern noch in kompletter Handarbeit hergestellt. Unser Natursauerteig wird immer am Vortag vorbereitet damit er genügend Ruhezeit bekommt.</p>
+      </div>
+      <div class="infobox" id="infobox3">
+        <h2>Bei welcher Filialie sollte ich bestellen?</h2>
+        <p>Ihre nächste Filialie finden sie am besten mit unserem Filialien Finder. Möglicherweise sind bestimmte Waren leider nicht in allen Filialen vorhanden, in dem Fall empfehlen wir ihnen bei der nächstmöglich Filiale zu bestellen wo die Ware vorhanden ist.</p>
+      </div>
+      <div class="image-container">
+        <img src="./img/cafe/cafe1.jpg" alt="cafe">
+      </div>
+      <footer class="footer">
+        <h2>Abbonieren Sie unseren Newsletter!</h2>
+        <input type="email" class="form-control" placeholder="Ihre Email Adresse">
+        <button class="button">Abonnieren</button>
+        <h2 class="error" id="email-error">Keine gültige Email Adresse.</h2>
+      </footer>
+    </div>
+    <script src="./js/slideshow.js" charset="utf-8"></script>
+    <script src="./js/newsletter.js" charset="utf-8"></script>
+    <script src="./js/mobile_menu.js" charset="utf-8"></script>
+  </body>
+</html>

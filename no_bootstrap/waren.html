@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Bäckerei</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/master.css">
+  </head>
+  <body>
+    <div class="modal">
+      <img class="modal-image">
+      <div class="modal-caption">
+        <h2>Mohnbrötchen</h2>
+      </div>
+      <span class="modal-close-button">&times;</span>
+      <a class="prev">&#10094;</a>
+      <a class="next">&#10095;</a>
+    </div>
+    <div class="wrapper" id="wrapper-waren">
+      <header class="header">
+        <a href="index.html" class="logo"><img src="./img/logo/logo.jpg" alt="logo"></a>
+        <a href="index.html">Home</a>
+        <a href="waren.html" style="color: white">Waren</a>
+        <a href="registrierung.html">Registrieren</a>
+        <span>☰</span>
+        <div class="mobile-menu">
+          <span>×</span>
+          <a href="index.html">Home</a>
+          <a href="waren.html">Waren</a>
+          <a href="registrierung.html">Registrieren</a>
+        </div>
+      </header>
+      <div class="item" id="item1">
+        <img src="./img/broetchen/schrippe_thumb.png" alt="Schrippen" data-index="0">
+        <h2>Schrippen</h2>
+        <xxp>Die guten Schrippen, frisch aus dem Ofen. Jeden Tag.</p>
+        <input type="number" class="item-input" value="0" min="0" max="100">
+      </div>
+      <div class="item" id="item2">
+        <img src="./img/broetchen/mohn_thumb.png" alt="Mohn Brötchen" data-index="1">
+        <h2>Mohn Brötchen</h2>
+        <xxp>Wie die Schrippen jeden Tag frisch gebacken, nur mit Mohn.</p>
+        <input type="number" class="item-input" value="0" min="0" max="100">
+      </div>
+      <div class="item" id="item3">
+        <img src="./img/broetchen/sesam_thumb.png" alt="Sesam Brötchen" data-index="2">
+        <h2>Sesam Brötchen</h2>
+        <p>Wie die Schrippen jeden Tag frisch gebacken, nur mit Sesam.</p>
+        <input type="number" class="item-input" value="0" min="0" max="100">
+      </div>
+      <div class="item" id="item4">
+        <img src="./img/broetchen/roggen_thumb.png" alt="Roggen Brötchen" data-index="3">
+        <h2>Roggen Brötchen</h2>
+        <p>Unsere gesunden Roggen Brötchen.</p>
+        <input type="number" class="item-input" value="0" min="0" max="100">
+      </div>
+      <div class="item" id="item5">
+        <img src="./img/broetchen/dinkel_thumb.png" alt="Dinkel Brötchen" data-index="4">
+        <h2>Dinkel Brötchen</h2>
+        <p>Unsere gesunden Dinkel Brötchen, mit sehr viel Eiweiß.</p>
+        <input type="number" class="item-input" value="0" min="0" max="100">
+      </div>
+      <div class="item" id="item6">
+        <img src="./img/broetchen/weltmeister_thumb.png" alt="Weltmeister Brötchen" data-index="5">
+        <h2>WM Brötchen</h2>
+        <p>Unsere Weltmeister Brötchen mit Volkorn Teig, Mohn und Sonnenblumenkernen.</p>
+        <input type="number" class="item-input" value="0" min="0" max="100">
+      </div>
+      <div class="confirm">
+        <button type="button">Bestellen</button>
+        <div class="error" id="error1">
+          <h2>Sie können nicht nichts bestellen!</h2>
+        </div>
+        <div class="error" id="error2">
+          <h2>Sie können nicht eine Negative Anzahl an Brötchen bestellen!</h2>
+        </div>
+      </div>
+    </div>
+    <script src="./js/modal.js" charset="utf-8"></script>
+    <script src="./js/order.js" charset="utf-8"></script>
+    <script src="./js/mobile_menu.js" charset="utf-8"></script>
+  </body>
+</html>
